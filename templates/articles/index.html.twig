@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class="flex justify-center flex-wrap flex-row">
+		{% for article in articles %}
+			<a href="{{path('article', {'id': article.id} )}}">
+				<div class="bg-white m-4 p-4">
+					<h1 class="text-blue-500">{{ article.title }}</h1>
+					<p>{{ article.content }}</p>
+				</div>
+			</a>
+		{% endfor %}
+	</div>
+{% endblock %}
