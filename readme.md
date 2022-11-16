@@ -17,3 +17,15 @@ composer i
 ```bash
 npm i
 ```
+
+### Effectuer la commande suivante pour obtenir les node_modules
+
+```bash
+npm run watch
+```
+
+### Enfin effectuer la commande suivante pour lancer le serveur symfony
+
+```bash
+symfony server:start
+```
